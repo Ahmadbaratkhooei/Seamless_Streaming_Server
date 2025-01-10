@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Audio Translation Stream</title>
+</head>
+<body>
+    <div class="translation-container">
+        <h1 class="title">Audio Translation Stream</h1>
+        
+        <div class="language-selector">
+            <select class="language-select" id="languageSelect" name="language">
+                <option value="eng">English</option>
+                <option value="spa">Spanish</option>
+                <option value="fra">French</option>
+                <option value="deu">German</option>
+                <option value="rus">Russian</option>
+                <option value="pes">Persian</option>
+            </select>
+        </div>
+
+        <div class="action-buttons">
+            <button id="startButton" class="btn btn-start">Start Stream</button>
+            <button id="stopButton" class="btn btn-stop" disabled>Stop Stream</button>
+        </div>
+
+        <div id="messages"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
